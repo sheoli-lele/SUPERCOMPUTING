@@ -1,2 +1,2 @@
 # SUPERCOMPUTING 
-#### My repo created for Supercomputing @ William & Mary!
+#### A repo created for Supercomputing @ William & Mary! First step : directory structures 
