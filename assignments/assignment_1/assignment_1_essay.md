@@ -1,31 +1,44 @@
-#### Motivation for HPC
+#### 1 : My Motivation for HPC 
 
-Coming into this course, I knew essentially nothing about High-Performance Computing (HPC). After gaining an initial understanding of the power of parallel processing—the raw capability of many computers working in unison—I have begun to see its immense value for the types of experiments I'm interested in ... specifically, agent-based modeling as a tool to gain insights into voters’ political leanings at a massive scale!
+HPC initially presented itself to me as a collection of jargon-like terms that I frequently overheard in the data science department but rarely defined in a way that felt accessible. As a student deeply engaged in the humanities , the main appeal of HPC lies in what I see as its potential to act as a powerful lens for studying human behavior!
 
-In the social sciences, experiments involving human subjects are often prohibitively expensive or ethically constrained. By leveraging HPC to run large-scale simulations, I see how we can reduce the cost of these experiments while gaining much more freedom for experimentation. This effectively blurs the line between social science and "hard" science, allowing us to test hypotheses in a digital environment that would be impossible to replicate in a traditional lab setting.
+I am interested in the use of multi-agent collaboration and large-scale simulations to research human tendencies in governance and societal structures. These complex systems require a level of computational power that traditional environments simply cannot provide ...making HPC a necessary bridge between theoretical philosophy and empirical data science.
 
-### Goals for this Course & Plan of Attack
+Overall, my motivation it to become a better problem-solver. Taking complex problems and piecing them apart is difficult, and I'm hoping this class will give me some tools to approach it with.
 
-My high-level goal for this course is to learn how to break a massive, seemingly insurmountable problem down into comprehensible, manageable pieces. 
+#### 2 : My Goals and Plan of Attack
 
-Beyond this conceptual goal, I have a specific interest in the infrastructure and resource management side of things—specifically job scheduling. I heard this term frequently during my internship this past summer, but knew very little about how it actually works (or even what it was!).
+My goals and learning plans for this semester revolve around consistency. 
 
-My "plan of attack" is centered on consistency : writing down things I don't understand during class and assignments, then actually dedicating Sunday and Wednesday nights to understanding them.
+I'm interested in exploring bioinformatics-relevant skills throughout the course. By tailoring my learning toward these applications, I think I'll gain a practical toolkit that extends beyond "general" data science. 
 
-### My rationale for this project structure 
+When I'm in class and completing assignments, I come across an overwhelming number of unfamiliar terms and concepts. I write them down, and plan to sit down each Sunday and Tuesday night from 6-7 PM (or something similar) to just familiarize myself with them (beyond the normal coursework).
 
-To be honest, the structure I have created for this assignment is very similar to the example provided in the prompt, as I believe it serves as a perfect starting point that can be refined as the semester progresses. For two main reasons, this seems like a good starting place for reproducible research : firstly because I am "preserving the truth" by ensuring that original files are immutable throughout the project and secondly because of the relative pathing (rootted in repository)!
+#### 3 : Reflection on Assignment 1
 
-### The importance of documented code
+The folder structure I have made for this assignment is designed with the core principles of reproducible research in mind. To be honest, this was a concept I had thought little about before -- I fugured it would be safe to copy your structure first, then wait for mine to evolve as the semester progresses. Hhere a few features of this structure that I like : 
 
-My understanding of "documented code" is that it serves as a way to formalize the main lines of argument in research. 
+   # a.  Separation of "raw" and "clean" data
+   # b.  Maintenance of logs
+   # c.  Inlcusion of config folder (avoids hard-coding things like file paths into scripts)
 
-Much like a philosopher -- this is my background -- outlines their premises to reach a conclusion, a researcher uses documentation to show their work as they proceed. This ensures that not all the burden falls on the code itself to be readable. 
+The separation of "raw" and "clean" data, which is in line with the project of Git, maintains a record of all parts of the work  -- not just the refined parts. I (and any collaborators) will easily be able to access both!
 
-By providing context and explanation, I am making the research more understandable for anyone reviewing my work, ensuring the logic is transparent and the results are verifiable. I'm sure my view on this will change slightly as the course continues.
+This ensures that the research pipeline can always be restarted from scratch without the risk of data corruption or loss (ncluding rough processes involving the raw data). This type of compartmentalization seems like the first step in creating an auditable research environment.
 
-### My personal background ... and continuing academic research interests
+#### 4 : About Me
 
-As a senior dual-studying Philosophy and Data Science, I'm profoundly interested in the study of emergent technologies within policy and education. I want to increase my "toolkit" of resources, and I am excited for this class to show me new ways to increase the scope of my research ideas!
+My passions mostly lie in art, literature, and philosophy, so I'm very used to dealing with very abstract systems of thought and ethical frameworks, etc . I see the value in learning skills like HPC : they will complement abstract thinking and provide necessary structure.
 
-Outside of the classroom, I have recently started maintaining a blog for fun where I write about "anything interesting," with a particular focus on how corporations interact with AI systems. I fully expect that the concepts we cover in this class regarding HPC and reproducibility will make several appearances in my writing there
+For fun, I have recently started a personal blog where I explore things like these : 
+
+- The problem of consciousness in non-human intelligence
+- Alignment and why such a thing might matter in our day-to-day
+- What is intelligence? and what characteristics of "intelligent" systems truly match characteristics we associate with intelligent human beings?
+- How will emerging technologies impact the future of education?
+
+This outlet has allowed me to synthesize my interests in AI safety and ethics with my technical education. I hope to pursue a career that allows me to continue thinking about these questions and do something usefule with them.
+
+Given my current lack of background in HPC, I'm incredibly excited to see how this course changes my perspective! Expect (for the better or worse) that the concepts I learn here will soon find their way into the blog.
+
+
