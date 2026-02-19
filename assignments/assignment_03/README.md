@@ -44,3 +44,52 @@ Q4 : How nay header lines contain the word "mitochondrion"?
 	- grep = lines matching pattern
 	- c = counts matching lines (don't just print)
 	- just 1 line!
+
+Q5 : How many header lines contain the word "chromosome"?
+
+	grep -c "chromosome" data/GCF_000001735.4_TAIR10.1_genomic.fna
+
+	-  similar to last question
+
+Q6 : How many nucleotides are in each of the first 3 chromosome sequences?
+
+	grep -A1 "chromosome [123]" data/GCF_000001735.4_TAIR10.1_genomic.fna |
+	grep -A1 "chromosome [123]" data/GCF_000001735.4_TAIR10.1_genomic.fna | grep -v ">" | grep -v "^--$" | awk '{print length($0)}'
+
+	- long and complex -- maybe there is some simpler approach??
+	- get help with this one later
+
+Q7 : How many nucleotides are in the sequence for 'chromosome 5'?
+
+	grep -A1 "chromosome 5" data/GCF_000001735.4_TAIR10.1_genomic.fna | grep -v ">" | tr -d "\n" | wc -c
+
+	- find line containing "chromosome 5" usingfirst grep command
+	- remove header line?
+	- remove newline characters
+	- as usual, wc -c = count characters
+
+Q8 : How many sequences contain "AAAAAAAAAAAAAAAA"?
+
+	grep -c "AAAAAAAAAAAAAAAA" data/GCF_000001735.4_TAIR10.1_genomic.fna
+
+	- 16 A's = pattern
+	- use -c to count matching lines!
+	- just 1!
+
+Q9 : If you were to sort the sequences alphabetically, which sequence (header) would be first in that list?
+
+	grep ">" data/GCF_000001735.4_TAIR10.1_genomic.fna | sort
+
+	- grab header lines (using ">")
+	- use pipe -- pass headers to next command
+	- sort these alphabetically
+
+Q10 : How would you make a new tab-separated version of this file, where the first column is the headers and the second column are the associated sequences?
+
+	tr "\n" "\t" < data/GCF_000001735.4_TAIR10.1_genomic.fna
+
+	- are there other ways to do this??????
+	- used Claude's help for this one
+
+
+### REFLECTION : 
