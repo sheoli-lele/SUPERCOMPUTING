@@ -38,10 +38,13 @@ Creating a project folder with good directory structure -- COMMANDS  :
 	nano README.md		# enters the README file I created for each lesson & assignment
 				# to exit nano, ^X to exit, ^S to save
 
+
 Commands to memorize : 
 
 	pwd
+
 	cd
+
 	ls and its flags 
 		-l  long format, shows permissions, owner, size, date modified
 		-a  show ALL files, including hidden files (start with .)
@@ -49,7 +52,7 @@ Commands to memorize :
 		-r  reverse sort order
 		-t  sort by last modified time
 		-R  recursively list subdirectories
-	mkdir
+
 	touch
 		-c  doesn't create the file if it doesn't already exist
 		    (don't accidentally create ghost file from a typo)
@@ -63,8 +66,39 @@ Commands to memorize :
 	nano	opens text editor out of terminal, good for READMEs
 	
 	cat 	prints contents of the file to a terminal
+
 	head	shows first 10 lines of files
+
 	tail 	shows last 10 lines of file
-	less 	opens file for scrollable reading (no editing)
+
+	less 	opens file for scrollable reading (no editing allowed)
 	
-							
+	cp 	copy file or folder to a place you specify
+			EX cp lesson_01_agenda.txt lesson_01 
+
+	mv 	move or rename a file or folder 
+			EX mv list1 list_01 # rename list1 to list_01
+	rm	delete a file
+		-r (deletes a folder)
+
+	find	search for folders by name or type
+		find . -name "filename"		 # search in current directory
+		find ~ -name "filename"		 # search in root directory
+		find /Downloads -name "*.txt"	 # find all .txt files in Downloads
+		
+		-name 	# search by name (case sensitive)
+		-iname	# search by name (case insensitive)
+		-type f # only search for files
+		-type d # only search for directories 
+		-
+	echo 	print text to terminal (like python "print")
+
+	clear	clears terminal screen
+
+	history	shows recent commands
+
+	man	shows documentation for any command
+			EX man ls
+
+						
+	
