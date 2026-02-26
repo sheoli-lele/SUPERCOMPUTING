@@ -14,6 +14,8 @@ Motivation & Purpose
 		- analyzing whole genome sequencing data for thousands of patients simultaneously
 		- training LLMs (enormous amounts of compute)
 		- training image recognition systems on millions of images simultaneously
+
+############################################################################################################################
 										
 Some HPC terms : 
 
@@ -30,7 +32,7 @@ Some HPC terms :
 	HPC Storage
 	nano
 
-WM has its own HPC clusters -- SciClone (mostly for A&S) and Chesapeake (for VIMS work)
+### WM has its own HPC clusters -- SciClone (mostly for A&S) and Chesapeake (for VIMS work)
 
 	- Within SciClone, there are many subclusters -- 2 of them are Bora and Kuro
 	- Each has specific use
@@ -51,11 +53,7 @@ WM has its own HPC clusters -- SciClone (mostly for A&S) and Chesapeake (for VIM
 
 
 
-
-
-
-
-Transferring local files (on laptop) onto HPC cluster -- 3 ways to do this :
+### Transferring local files (on laptop) onto HPC cluster -- 3 ways to do this :
 
    1) FileZilla (most visual and beginner-friendly way)
 
@@ -102,10 +100,9 @@ Transferring local files (on laptop) onto HPC cluster -- 3 ways to do this :
 
 
 
-
-
-When transferring files, we often run the risk of corrupting those files (EX some of the data is changed).
-This is bad for reproducibility -- for experimental results to be reproducible, we need them to be 100% the same
+### When transferring files, we often run the risk of corrupting those files (EX some of the data is changed).
+	
+	- This is bad for reproducibility -- for experimental results to be reproducible, we need them to be 100% the same
 
 	- We want to be able to test for this (even if it's somewhat rare)
 	- Use a HASH DIGEST (hash function takes a file of any size, produces short string of numbers + letters
@@ -126,3 +123,22 @@ This is bad for reproducibility -- for experimental results to be reproducible, 
 
 			So the file is the same in both locations! YAY!
 		
+
+
+###########################################################################################################################
+
+### COMMANDS : 
+
+	nano ~/ .zshrc		# go to nano file to add aliases (this command is not aliased under "newalias")
+
+	alias aliasname="command" 	# wihin zshrc file in nano
+			
+	source ~/.zshrc 	# run after exiting nano file to make aliases active
+	
+	sftp smlele@bora.sciclone.wm.edu	# file transfer from local to remote repo, no github 
+						# good for transferring large files (not supposed to be on GH)
+						# this is like programmatically using filezilla
+						 
+	md5sum myfile.txt	# generates hash digest (find digest of same file once transferred to HPC)
+
+	

@@ -17,7 +17,7 @@ Motivation & Purpose
 
 	Got most of this from : https://gzahn.github.io/binf-data-skills/Media/bds_Ch1.pdf
 
-
+#######################################################################################################
 
 
 Creating a project folder with good directory structure -- COMMANDS  :
