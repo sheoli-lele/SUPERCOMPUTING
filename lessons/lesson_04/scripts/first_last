@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -ueo pipefail
+
+# print first line and last line
+head -n 1
+tail -n 1
+
+# change permissions -- make file executable
+chomod +x first_last.sh
+
+# add location to PATH
+# nano ~/.zshrc (or use alias newalias)
+# at the bottom, add line export PATH=$PATH:"absolute/path/to/this/folder_lesson_04"
+	# find this absolute path by entering folder, then pwd 
+
+# refresh shell
+exec bash
+
+# testing the file
+seq 1 10 | first_last
+
+# change name from first_last.sh to first_last
